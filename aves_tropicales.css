@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #edf4ee;
+    color: #25352b;
+    min-height: 100vh;
+}
+/*----------------------------*/
+/*--|estilo_aves_tropicales|--*/
+/*----------------------------*/
+.encabezado {
+    background: #183c2a;
+    color: white;
+    padding: 35px 8%;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.icono_encabezado {
+    width: 72px;
+    height: 72px;
+    background: #e5a83d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 31px;
+}
+.etiqueta {
+    color: #e5c06a;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.encabezado h1 {
+    font-size: 35px;
+    margin: 6px 0;
+}
+.encabezado p {
+    color: #c4d5ca;
+}
+/*--------------------------------------*/
+/*--|estilo_contenido_galeria_de_aves|--*/
+/*--------------------------------------*/
+.contenedor {
+    width: 90%;
+    max-width: 1250px;
+    margin: 35px auto;
+}
+.introduccion {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+    border: 1px solid #d5e3d8;
+}
+.icono_intro {
+    width: 55px;
+    height: 55px;
+    background: #e8f1e9;
+    color: #257047;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.introduccion h2 {
+    margin-bottom: 5px;
+}
+.introduccion p {
+    color: #65736a;
+}
+/*------------------------------*/
+/*--|estilo_galeria_principal|--*/
+/*------------------------------*/
+.galeria_aves {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.ave {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #d8e4da;
+    box-shadow: 0 7px 18px rgba(30, 70, 45, 0.08);
+}
+.imagen_ave {
+    height: 190px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 70px;
+}
+.ave_uno {
+    background: linear-gradient(135deg, #136b52, #41a77e);
+}
+.ave_dos {
+    background: linear-gradient(135deg, #563a75, #a06ec4);
+}
+.ave_tres {
+    background: linear-gradient(135deg, #167b83, #5ac7c0);
+}
+.ave_cuatro {
+    background: linear-gradient(135deg, #c66d76, #edaaa5);
+}
+.imagen_ave span {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 6px 9px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.datos_ave {
+    padding: 22px;
+}
+.tipo_ave {
+    color: #2b8052;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.nombre_ave {
+    font-size: 24px;
+    margin: 7px 0 20px;
+}
+.datos_ave label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 13px 0 6px;
+}
+.datos_ave input, .campo_descripcion {
+    width: 100%;
+    border: 1px solid #d2ddd4;
+    border-radius: 6px;
+    padding: 10px;
+    background: #f8fbf8;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+.datos_ave input:focus, .campo_descripcion:focus {
+    border-color: #35905c;
+}
+.campo_descripcion {
+    min-height: 85px;
+    resize: vertical;
+}
+.acciones_ave {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.acciones_ave button, #boton_restablecer {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.boton_guardar {
+    background: #28764d;
+    color: white;
+}
+.boton_restaurar {
+    background: #6b756e;
+    color: white;
+}
+.acciones_ave button:hover, #boton_restablecer:hover {
+    opacity: 0.85;
+}
+.acciones_ave i, #boton_restablecer i {
+    margin-right: 7px;
+}
+.mensaje_ave {
+    min-height: 20px;
+    margin-top: 12px;
+    color: #28764d;
+    font-size: 13px;
+}
+/*-----------------------------------------------*/
+/*--|estilo_accion_restablecer_toda_la_galeria|--*/
+/*-----------------------------------------------*/
+.acciones_generales {
+    text-align: center;
+    margin: 30px 0;
+}
+#boton_restablecer {
+    background: #b34b4b;
+    color: white;
+}
+#mensaje_general {
+    min-height: 22px;
+    margin-top: 12px;
+    color: #28764d;
+}

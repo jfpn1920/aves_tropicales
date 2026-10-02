@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aves tropicales</title>
+    <link rel="stylesheet" href="aves_tropicales.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="aves_tropicales.js" defer></script>
+</head>
+<body>
+    <!------------------------------------>
+    <!--|estructuracion_aves_tropicales|-->
+    <!------------------------------------>
+    <header class="encabezado">
+        <div class="icono_encabezado">
+            <i class="fa-solid fa-dove"></i>
+        </div>
+        <div>
+            <span class="etiqueta">EXHIBICIÓN TROPICAL</span>
+            <h1>Aves Tropicales</h1>
+            <p>Descubre algunas aves características de las regiones tropicales.</p>
+        </div>
+    </header>
+    <!---------------------------------------------->
+    <!--|estructuracion_contenido_galeria_de_aves|-->
+    <!---------------------------------------------->
+    <main class="contenedor">
+        <section class="introduccion">
+            <div class="icono_intro">
+                <i class="fa-solid fa-feather"></i>
+            </div>
+            <div>
+                <h2>Galería de aves</h2>
+                <p>Personaliza la información de cada ave y guarda los cambios.</p>
+            </div>
+        </section>
+        <!----------------------->
+        <!--|galeria_principal|-->
+        <!----------------------->
+        <section class="galeria_aves">
+            <article class="ave" data-id="1">
+                <div class="imagen_ave ave_uno">
+                    <i class="fa-solid fa-dove"></i>
+                    <span>01</span>
+                </div>
+                <div class="datos_ave">
+                    <span class="tipo_ave">AVE TROPICAL</span>
+                    <h2 class="nombre_ave">Tucán</h2>
+                    <label>Nombre</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Región</label>
+                    <input type="text" class="campo_region">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                    <div class="acciones_ave">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_ave"></p>
+                </div>
+            </article>
+            <article class="ave" data-id="2">
+                <div class="imagen_ave ave_dos">
+                    <i class="fa-solid fa-crow"></i>
+                    <span>02</span>
+                </div>
+                <div class="datos_ave">
+                    <span class="tipo_ave">AVE TROPICAL</span>
+                    <h2 class="nombre_ave">Guacamaya</h2>
+                    <label>Nombre</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Región</label>
+                    <input type="text" class="campo_region">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                    <div class="acciones_ave">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_ave"></p>
+                </div>
+            </article>
+            <article class="ave" data-id="3">
+                <div class="imagen_ave ave_tres">
+                    <i class="fa-solid fa-feather-pointed"></i>
+                    <span>03</span>
+                </div>
+                <div class="datos_ave">
+                    <span class="tipo_ave">AVE TROPICAL</span>
+                    <h2 class="nombre_ave">Colibrí</h2>
+                    <label>Nombre</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Región</label>
+                    <input type="text" class="campo_region">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                    <div class="acciones_ave">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_ave"></p>
+                </div>
+            </article>
+            <article class="ave" data-id="4">
+                <div class="imagen_ave ave_cuatro">
+                    <i class="fa-solid fa-feather"></i>
+                    <span>04</span>
+                </div>
+                <div class="datos_ave">
+                    <span class="tipo_ave">AVE TROPICAL</span>
+                    <h2 class="nombre_ave">Flamenco</h2>
+                    <label>Nombre</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Región</label>
+                    <input type="text" class="campo_region">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                    <div class="acciones_ave">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_ave"></p>
+                </div>
+            </article>
+        </section>
+        <!---------------------------------------->
+        <!--|accion_restablecer_toda_la_galeria|-->
+        <!---------------------------------------->
+        <section class="acciones_generales">
+            <button id="boton_restablecer"><i class="fa-solid fa-trash"></i>Restablecer todas</button>
+            <p id="mensaje_general"></p>
+        </section>
+    </main>
+</body>
+</html>
